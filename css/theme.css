@@ -1,0 +1,32 @@
+body {
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+body.dark-theme {
+    background-color: #251819;
+    color: #FFF;
+}
+
+body.dark-theme a {
+    color: #ffffff;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme p {
+    color: #ffffff;
+}
+
+body.dark-theme .message-form {
+    color: #251819;
+}
+
+body.dark-theme .gift {
+    background-color: #2F2223;
+    border: 0.5px solid #2f22236c;
+}
+
+body.dark-theme .card {
+    background-color: none;
+}
