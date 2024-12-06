@@ -23,12 +23,27 @@
                 <li>
                     <button id="theme-toggle-btn" class="theme-toggle">☽</button>
                 </li>
+                <li>
+                    <button id="settings-btn">Settings</button>
+                    <div id="menu-overlay">
+                        <div id="menu">
+                            <h2>Settings</h2>
+                            <div class="setting-item">
+                                <label for="volume-slider">Volume:</label>
+                                <input type="range" id="volume-slider" min="0" max="5" step="0.2" value="0.2">
+                                <audio id="background-audio" src="./audio/magic-christmas-night-264068.mp3" loop></audio>
+                            </div>                            
+                            <button id="close-btn">Close</button>
+                        </div>
+                    </div>
+                </li>
+                <script src="./sound.js"></script>
             </ul>
         </div>
     </nav>
     <header>
         <div class="home-image">
-            <img src="./img/home.png" width="500" height="442" alt="Home">
+            <img src="./img/home.svg" width="500" height="442" alt="Home">
         </div>
         <div class="title">
             <h1>Merry Christmas and <br>
@@ -48,7 +63,7 @@
             </h2>
             <ul class="cards">
                 <li class="card">
-                    <img class="card-img" src="./img/giving/giving1.png" width="120" height="120" alt="Surprise gifts">
+                    <img class="card-img" src="./img/giving/giving1.svg" width="120" height="120" alt="Surprise gifts">
                     <div class="card-content">
                         <h3 class="card-title">Surprise gifts</h3>
                         <p class="card-description">They are the best <br>
@@ -57,7 +72,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <img class="card-img" src="./img/giving/giving2.png" width="120" height="120" alt="Ornaments">
+                    <img class="card-img" src="./img/giving/giving2.svg" width="120" height="120" alt="Ornaments">
                     <div class="card-content">
                         <h3 class="card-title">Ornaments</h3>
                         <p class="card-description">
@@ -67,7 +82,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <img src="./img/giving/giving3.png" width="120" height="120" alt="Lots of love">
+                    <img src="./img/giving/giving3.svg" width="120" height="120" alt="Lots of love">
                     <div class="card-content">
                         <h3 class="card-title">Lots of love</h3>
                         <p class="card-description">
@@ -91,7 +106,7 @@
                 </p>
                 <button class="btn">Send Good Wishes</button>
             </div>
-            <img class="celebrate-image" src="./img/celebrate/celebrate.png" width="450" height="450" alt="Fireplace">
+            <img class="celebrate-image" src="./img/celebrate/celebrate.svg" width="450" height="450" alt="Fireplace">
         </section>
         <section class="share-gift">
             <h2 class="gifts-title">
@@ -100,9 +115,9 @@
             <ul class="gifts">
                 <li class="gift">
                     <div class="favorite-button">
-                        <img src="./img/bx-heart.png" alt="Add to favorites" width="20" height="20">
+                        <img src="./img/bx-heart.svg" alt="Add to favorites" width="20" height="20">
                     </div>
-                    <img src="./img/gifts/gift1.png" alt="Gingerbread" width="120" height="120" class="gift-img">
+                    <img src="./img/gifts/gift1.svg" alt="Gingerbread" width="120" height="120" class="gift-img">
                     <div class="gift-content">
                         <h3 class="gift-price">15$</h3>
                         <p class="gift-description">Gingerbread</p>
@@ -110,9 +125,9 @@
                 </li>
                 <li class="gift">
                     <div class="favorite-button">
-                        <img src="./img/bx-heart.png" alt="Add to favorites" width="20" height="20">
+                        <img src="./img/bx-heart.svg" alt="Add to favorites" width="20" height="20">
                     </div>
-                    <img src="./img/gifts/gift2.png" alt="Santa Claus Hat" width="120" height="120" class="gift-img">
+                    <img src="./img/gifts/gift2.svg" alt="Santa Claus Hat" width="120" height="120" class="gift-img">
                     <div class="gift-content">
                         <h3 class="gift-price">22$</h3>
                         <p class="gift-description">Santa Claus Hat</p>
@@ -120,9 +135,9 @@
                 </li>
                 <li class="gift">
                     <div class="favorite-button">
-                        <img src="./img/bx-heart.png" alt="Add to favorites" width="20" height="20">
+                        <img src="./img/bx-heart.svg" alt="Add to favorites" width="20" height="20">
                     </div>
-                    <img src="./img/gifts/gift3.png" alt="Candy Stick" width="120" height="120" class="gift-img">
+                    <img src="./img/gifts/gift3.svg" alt="Candy Stick" width="120" height="120" class="gift-img">
                     <div class="gift-content">
                         <h3 class="gift-price">12$</h3>
                         <p class="gift-description">Candy Stick</p>
@@ -130,9 +145,9 @@
                 </li>
                 <li class="gift">
                     <div class="favorite-button">
-                        <img src="./img/bx-heart.png" alt="Add to favorites" width="20" height="20">
+                        <img src="./img/bx-heart.svg" alt="Add to favorites" width="20" height="20">
                     </div>
-                    <img src="./img/gifts/gift4.png" alt="Christmas Tree" width="120" height="120" class="gift-img">
+                    <img src="./img/gifts/gift4.svg" alt="Christmas Tree" width="120" height="120" class="gift-img">
                     <div class="gift-content">
                         <h3 class="gift-price">48$</h3>
                         <p class="gift-description">Christmas Tree</p>
@@ -140,9 +155,9 @@
                 </li>
                 <li class="gift">
                     <div class="favorite-button">
-                        <img src="./img/bx-heart.png" alt="Add to favorites" width="20" height="20">
+                        <img src="./img/bx-heart.svg" alt="Add to favorites" width="20" height="20">
                     </div>
-                    <img src="./img/gifts/gift5.png" alt="Showman" width="120" height="120" class="gift-img">
+                    <img src="./img/gifts/gift5.svg" alt="Showman" width="120" height="120" class="gift-img">
                     <div class="gift-content">
                         <h3 class="gift-price">35$</h3>
                         <p class="gift-description">Showman</p>
@@ -161,7 +176,7 @@
                 </form>
                 <button class="message-btn">Send Message</button>
             </div>
-            <img src="./img/message/letter.png" alt="Letter" width="366" height="295">
+            <img src="./img/letter.svg" alt="Letter" width="366" height="295">
         </section>
         <section>
 
@@ -197,18 +212,18 @@
                 <ul class="footer-links">
                     <li>
                         <a href="https://www.apple.com/pl/app-store/" target="_blank">
-                            <img src="./img/appstore.png" alt="App Store" width="100" height="30" class="footer-apps">
+                            <img src="./img/Apps/appstore.svg" alt="App Store" width="100" height="30" class="footer-apps">
                         </a>
                     </li>
                     <li>
                         <a href="https://play.google.com/store/games?hl=pl" target="_blank">
-                            <img src="./img/googleplay.png" alt="Google Play" width="100" height="30">
+                            <img src="./img/Apps/googleplay.svg" alt="Google Play" width="100" height="30">
                         </a>
                     </li>
                 </ul>
             </li>
         </ul>
-        <img class="footer-ball-one" src="./img/balls/ball.png" alt="Ball" width="120" height="132">
+        <img class="footer-ball-one" src="./img/balls/ball1.svg" alt="Ball" width="120" height="132">
         <div class="copyright">
             <p>© Bedimcode. All rigths reserved</p>
         </div>

@@ -30,3 +30,16 @@ body.dark-theme .gift {
 body.dark-theme .card {
     background-color: none;
 }
+
+body.dark-theme a:hover {
+    border-bottom: #FFF 1px solid;
+}
+
+body.dark-theme #menu {
+    background-color: #2F2223;
+    box-shadow: 0 4px 10px #2F2223  ;
+}
+
+body.dark-theme #menu h2 {
+    border-bottom: #FFF 1px solid;
+}
