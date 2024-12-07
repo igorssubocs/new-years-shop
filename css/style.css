@@ -80,7 +80,7 @@ header {
     display: flex;
     align-items: center;
     margin-top: 64px;
-    margin-bottom: 128px;
+    margin-bottom: 120px;
     gap: 18px;
     width: 968px;
 }
@@ -98,6 +98,7 @@ header button {
     background-color: #DC3845;
     padding: 20px 56px;
     border-radius: 64px;
+    font-weight: 600;
 }
 
 /* MAIN [GIVING] */
@@ -330,9 +331,11 @@ footer a {
     background-color: #DC3845;
     color: #FFF;
     border-radius: 64px;
+    font-weight: 600;
 }
 
-/* Оверлей */
+/* OVERLAY */
+
 #menu-overlay {
     position: fixed;
     top: 0;
@@ -362,12 +365,13 @@ footer a {
 }
 
 #close-btn {
-    background: #FF5252;
+    background: #DC3845;
     color: #FFF;
     border: none;
     padding: 10px 20px;
     border-radius: 30px;
     margin-top: 20px;
+    font-weight: 600;
 }
 
 .setting-item {
@@ -403,4 +407,24 @@ footer a {
 #volume-slider::-webkit-slider-thumb:hover {
     background: #FF5252;
     transform: scale(1.1);
+}
+
+/* COUNTDOWN */
+
+.countdown-to-new-year {
+    background-color: #DC3845;
+    padding: 50px 0 50px 0;
+    margin-bottom: 72px;
+    color: #FFF;
+    border-radius: 30px;
+}
+
+.countdown-to-new-year h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#countdown {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
